@@ -1,3 +1,18 @@
+// 8.Convert boolean values to strings 'Yes' or 'No'. 
+// Write a function that returns 'Yes' if boolean value if true and 'No' if boolean value is false
+function boolToWord( bool ){
+  //...
+  if(bool){
+    return "Yes"
+  } else {
+    return "No"
+  }
+}
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
 // 7.Complete the solution so that it reverses the string passed into it.
 // 'world'  =>  'dlrow'
 // 'word'   =>  'drow'
