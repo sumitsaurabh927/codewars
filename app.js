@@ -1,17 +1,34 @@
-// 8.Convert boolean values to strings 'Yes' or 'No'. 
-// Write a function that returns 'Yes' if boolean value if true and 'No' if boolean value is false
-function boolToWord( bool ){
-  //...
-  if(bool){
-    return "Yes"
-  } else {
-    return "No"
-  }
-}
+// 9. Sum of positives
+// You get an array of numbers, return the sum of all of the positives ones.
+// Example [1,-4,7,12] => 1 + 7 + 12 = 20
+// Note: if there is nothing to sum, the sum is default to 0.
 
+function positiveSum(arr) {
+  let sum = 0;
+  for (i = 0; i <= arr.length; i++) {
+    if (arr[i] >= 0) {
+      sum += arr[i];
+    } else {
+      continue;
+    }
+  }
+  return sum;
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 8.Convert boolean values to strings 'Yes' or 'No'.
+// Write a function that returns 'Yes' if boolean value if true and 'No' if boolean value is false
+function boolToWord(bool) {
+  //...
+  if (bool) {
+    return "Yes";
+  } else {
+    return "No";
+  }
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------
 
 // 7.Complete the solution so that it reverses the string passed into it.
 // 'world'  =>  'dlrow'
@@ -24,11 +41,9 @@ function boolToWord( bool ){
 //   revArr = arr.reverse();
 //   return revArr.join("");
 // }
-function solution(str){
-  return str.split('').reverse().join('');
+function solution(str) {
+  return str.split("").reverse().join("");
 }
-
-
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
