@@ -1,28 +1,50 @@
+// 5.
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+// 4. Make a simple function called greet that returns the most-famous "hello world!".
+// Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
+
+// Write a function "greet" that returns "hello world!"
+// function greet(){
+//   return `hello world!`;
+// }
+
+const greet = () => {
+  return `hello world!`;
+};
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 // 3. Convert a Number to a String!
 // 134 -> '134'
+
 function numberToString(num) {
   // Return a string of the number here!
   return num.toString();
 }
 
+// -------------------------------------------------------------------------------------------------------------------------------------
 
 // 2. Very simple, given an integer or a floating-point number, find its opposite.
 // Examples:
 // 1: -1
 // 14: -14
 // -34: 34
-  
+
 function opposite(number) {
-    //your code here
-    if(number){
-      return ( number * (-1) );
-    }else {
-      return 0;
-    }
+  //your code here
+  if (number) {
+    return number * -1;
+  } else {
+    return 0;
   }
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------
 
 // 1. Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
 function even_or_odd(number) {
-    return (number % 2 ) ? "Odd" : "Even" ;
+  return number % 2 ? "Odd" : "Even";
 }
