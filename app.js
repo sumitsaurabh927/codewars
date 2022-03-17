@@ -1,3 +1,14 @@
+// 10. It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+function removeChar(str) {
+  //You got this!
+  let arr = [...str];
+  arr.shift();
+  arr.pop();
+  return arr.join("");
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 // 9. Sum of positives
 // You get an array of numbers, return the sum of all of the positives ones.
 // Example [1,-4,7,12] => 1 + 7 + 12 = 20
