@@ -1,5 +1,9 @@
-// 3.
-
+// 3. Convert a Number to a String!
+// 134 -> '134'
+function numberToString(num) {
+  // Return a string of the number here!
+  return num.toString();
+}
 
 
 // 2. Very simple, given an integer or a floating-point number, find its opposite.
