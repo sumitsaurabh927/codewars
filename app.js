@@ -1,4 +1,19 @@
-// 6. 
+// 7.
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+// 6. Given a non-empty array of integers, return the result of multiplying the values together in order.
+// Example:[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+// function grow(x) {
+//   let result = 1;
+//   for (i = 0; i < x.length; i++) {
+//     result *= x[i];
+//   }
+//   return result;
+// }
+
+const grow = (x) => x.reduce((prv, cur) => prv * cur);
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -6,7 +21,7 @@
 
 function doubleInteger(i) {
   // i will be an integer. Double it and return it.
-  return i*2;
+  return i * 2;
 }
 
 // -------------------------------------------------------------------------------------------------------------------------------------
