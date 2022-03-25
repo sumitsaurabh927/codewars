@@ -1,3 +1,27 @@
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+// 11. In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+// Examples
+// makeNegative(1);    // return -1
+// makeNegative(-5);   // return -5
+// makeNegative(0);    // return 0
+// makeNegative(0.12); // return -0.12
+// Notes
+// The number can be negative already, in which case no change is required.
+// Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+// function makeNegative(num) {
+//   // Code?
+//   return num <= 0 ? num : num * -1;
+// }
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 // 10. It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
 function removeChar(str) {
   //You got this!
