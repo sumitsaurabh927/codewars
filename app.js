@@ -1,5 +1,17 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 12.Write a function called repeatStr which repeats the given string string exactly n times.
+// repeatStr(6, "I") // "IIIIII"
+// repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+function repeatStr(n, s) {
+  let str = "";
+  for (k = 0; k < n; k++) {
+    str = `${str}${s}`;
+  }
+  return str;
+}
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 // 11. In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 
 // Examples
