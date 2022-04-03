@@ -5,7 +5,13 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 25. Implement a function which convert the given boolean value into its string representation.
+// Note: Only valid inputs will be given.
 
+function booleanToString(b) {
+  //your code here
+  return b.toString();
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 24. Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
