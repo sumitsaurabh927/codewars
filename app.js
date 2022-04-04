@@ -1,6 +1,21 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 27. Can you find the needle in the haystack?
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// After your function finds the needle it should return a message (as a string) that says:
+// "found the needle at position " plus the index it found the needle, so:
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+// should return "found the needle at position 5" (in COBOL "found the needle at position 6")
+
+
+function findNeedle(haystack) {
+  // testing the presence of 'needle'
+  if (haystack.includes("needle")) {
+    // since 'needle' is present, reporting its index
+    return `found the needle at position ${haystack.indexOf("needle")}`;
+  }
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 26. Given an array of integers, return a new array with each value doubled.
