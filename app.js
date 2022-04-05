@@ -27,9 +27,15 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 29. Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+// You can assume that all values are integers. Do not mutate the input array/list.
 
-
-
+function invert(array) {
+  return array.map( x => -x);
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 28. Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
