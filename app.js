@@ -8,6 +8,23 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 33. Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+// Note: input will never be an empty string
+
+function fakeBin(x) {
+  let a = Array.from(x, Number);
+
+  for (let i = 0; i < a.length; i++) {
+    if (Number(a[i]) < 5) {
+      a[i] = 0;
+    } else {
+      a[i] = 1;
+    }
+  }
+  return a.join("");
+}
+
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 32. Write a function which converts the input string to uppercase.
