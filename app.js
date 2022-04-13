@@ -1,5 +1,49 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+// 41. Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+// Examples
+// Input: [1, 5.2, 4, 0, -1]
+// Output: 9.2
+
+// Input: []
+// Output: 0
+
+// Input: [-2.398]
+// Output: -2.398
+
+// Assumptions
+// You can assume that you are only given numbers.
+// You cannot assume the size of the array.
+// You can assume that you do get an array and if the array is empty, return 0.
+
+// Sum Numbers
+function sum(numbers) {
+  "use strict";
+
+  return (numbers.length != 0) ? numbers.reduce((x, y) => x + y, 0) : 0;
+
+};
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 // 40. Create a function which answers the question "Are you playing banjo?".
 // If your name starts with the letter "R" or lower case "r", you are playing banjo!
 
@@ -11,16 +55,16 @@
 
 function areYouPlayingBanjo(name) {
   // Implement me
-  return (name[0]==='R' || name[0] === 'r') ? `${name} plays banjo` : `${name} does not play banjo`;
+  return (name[0] === 'R' || name[0] === 'r') ? `${name} plays banjo` : `${name} does not play banjo`;
 }
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 39. Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
 // Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't
-function lovefunc(flower1, flower2){
+function lovefunc(flower1, flower2) {
   // moment of truth
-  return  ((flower1%2===0 && flower2%2!=0) || (flower2%2===0 && flower1%2!=0) ) ? true : false;
+  return ((flower1 % 2 === 0 && flower2 % 2 != 0) || (flower2 % 2 === 0 && flower1 % 2 != 0)) ? true : false;
 }
 
 // -------------------------------------------------------------------------------------------------------------------------------------
@@ -35,7 +79,7 @@ function lovefunc(flower1, flower2){
 // n=-5, m=5:  0
 
 function paperwork(n, m) {
-  if(n<0 || m < 0){
+  if (n < 0 || m < 0) {
     return 0
   } else return n * m;
 }
@@ -51,8 +95,8 @@ function paperwork(n, m) {
 
 const reverseSeq = n => {
   let arr = [];
-  if(n){
-    for(n; n>0; n--){
+  if (n) {
+    for (n; n > 0; n--) {
       arr.push(n);
     }
   }
@@ -66,10 +110,10 @@ const reverseSeq = n => {
 
 function find_average(array) {
   // your code here
-  if(!array.length) return 0;
-  else{
-    let sum = array.reduce( (x,y) => x + y, 0);
-    return sum/array.length;
+  if (!array.length) return 0;
+  else {
+    let sum = array.reduce((x, y) => x + y, 0);
+    return sum / array.length;
   }
 }
 
@@ -88,21 +132,21 @@ function find_average(array) {
 // if bmi > 30 return "Obese"
 
 function bmi(weight, height) {
-  
-  if(weight/(height * height) <= 18.5 ){
-      return 'Underweight'
-  } else if(weight/(height * height) <= 25){
+
+  if (weight / (height * height) <= 18.5) {
+    return 'Underweight'
+  } else if (weight / (height * height) <= 25) {
     return 'Normal'
-  } else if(weight/(height * height) <= 30){
+  } else if (weight / (height * height) <= 30) {
     return 'Overweight'
-  }else if(weight/(height * height) > 30){
+  } else if (weight / (height * height) > 30) {
     return 'Obese'
   }
 }
 
 // 34. A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
 
-Return True if yes, False otherwise :)
+Return True if yes, False otherwise:)
 
 function hero(bullets, dragons) {
   //Get Coding!
