@@ -12,7 +12,15 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 43. I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
 
+// P.S. Each array includes only integer numbers. Output is a number too.
+
+
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.reduce((x,y)=>x+y,0) + arr2.reduce((x,y)=>x+y,0); 
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 42. You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true (1 in Prolog, NASM and COBOL) if it is possible and false (0 in Prolog, NASM and COBOL) if not. The input values are always positive.
