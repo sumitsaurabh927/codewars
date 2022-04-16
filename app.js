@@ -6,6 +6,23 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 45. There was a test in your class and you passed it. Congratulations!
+// But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+// Return True if you're better, else False!
+
+// Note:
+// Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+  let sum = yourPoints + classPoints.reduce((x, y) => x + y, 0);
+  let avg = sum / (classPoints.length + 1);
+  return (yourPoints >= avg) ? true : false;
+}
+
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -15,7 +32,7 @@
 
 function simpleMultiplication(number) {
   // your code........
-return ( number % 2 === 0 ) ? number * 8 : number * 9;
+  return (number % 2 === 0) ? number * 8 : number * 9;
 }
 
 
@@ -28,7 +45,7 @@ return ( number % 2 === 0 ) ? number * 8 : number * 9;
 
 
 function arrayPlusArray(arr1, arr2) {
-  return arr1.reduce((x,y)=>x+y,0) + arr2.reduce((x,y)=>x+y,0); 
+  return arr1.reduce((x, y) => x + y, 0) + arr2.reduce((x, y) => x + y, 0);
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 
