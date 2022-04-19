@@ -11,7 +11,17 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 50. You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
 
+// Array can contain numbers or strings. X can be either.
+
+// Return true if the array contains the value, false if not.
+
+function check(a, x) {
+  // will use includes array method
+  return ( a.includes( x ) || a.includes( x.toString() ) ) ? true : false;
+
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 49. Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
 
