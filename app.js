@@ -9,6 +9,36 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 51. Your task is to make two functions (max and min, or maximum and minimum, etc., depending on the language) that receive a list of integers as input and return, respectively, the largest and lowest number in that list.
+
+// Examples (Input -> Output)
+// * [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+// * [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+// * [42, 54, 65, 87, 0]             -> min = 0, max = 87
+// * [5]                             -> min = 5, max = 5
+// Notes
+// You may consider that there will not be any empty arrays/vectors.
+
+
+var min = function (list) {
+  let min = list[0];
+  list.forEach(item => {
+    if (item < min) {
+      min = item;
+    }
+  })
+  return min;
+}
+
+var max = function (list) {
+  let max = list[0];
+  list.forEach(item => {
+    if (item > max) {
+      max = item;
+    }
+  })
+  return max;
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 50. You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
@@ -19,7 +49,7 @@
 
 function check(a, x) {
   // will use includes array method
-  return ( a.includes( x ) || a.includes( x.toString() ) ) ? true : false;
+  return (a.includes(x) || a.includes(x.toString())) ? true : false;
 
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
@@ -36,7 +66,7 @@ function check(a, x) {
 
 function DNAtoRNA(dna) {
   // create a function which returns an RNA sequence from the given DNA sequence
- return dna.split('T').join('U')
+  return dna.split('T').join('U')
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 48.Given an array of integers.
@@ -52,7 +82,7 @@ function countPositivesSumNegatives(input) {
   //   checking for empty array or null
   let count = 0;
   let sum = 0;
-  if (input == null || input.length === 0  ) {
+  if (input == null || input.length === 0) {
     return [];
   } else {
     for (let i = 0; i < input.length; i++) {
