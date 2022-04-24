@@ -1,3 +1,47 @@
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+// 60. The function is not returning the correct values. Can you figure out why?
+
+// Example (Input --> Output ):
+
+// 3 --> "Earth"
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+      break;
+    case 2:
+      name = 'Venus'
+      break;
+    case 3:
+      name = 'Earth'
+      break;
+    case 4:
+      name = 'Mars'
+      break;
+    case 5:
+      name = 'Jupiter'
+      break;
+    case 6:
+      name = 'Saturn'
+      break;
+    case 7:
+      name = 'Uranus'
+      break;
+    case 8:
+      name = 'Neptune'
+      break;
+  }
+  
+  return name;
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 // 59. Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
 
 // The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
