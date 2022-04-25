@@ -1,5 +1,20 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 61. You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
 
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+
+// For example:
+
+// monkeyCount(10) // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// monkeyCount(1) // --> [1]
+function monkeyCount(n) {
+  // your code here
+  let arr = [];
+  for (let i = 1; i < n + 1; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -8,9 +23,9 @@
 // Example (Input --> Output ):
 
 // 3 --> "Earth"
-function getPlanetName(id){
+function getPlanetName(id) {
   var name;
-  switch(id){
+  switch (id) {
     case 1:
       name = 'Mercury'
       break;
@@ -36,7 +51,7 @@ function getPlanetName(id){
       name = 'Neptune'
       break;
   }
-  
+
   return name;
 }
 
@@ -51,7 +66,7 @@ function getPlanetName(id){
 // setAlarm(false, false) -> false
 // setAlarm(true, false) -> true
 
-function setAlarm(employed, vacation){
+function setAlarm(employed, vacation) {
   return (employed && !vacation) ? true : false;
 }
 
@@ -86,7 +101,7 @@ function otherAngle(a, b) {
 
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great
-function smash (words) {
+function smash(words) {
   return words.join(' ');
 };
 // -------------------------------------------------------------------------------------------------------------------------------------
@@ -102,7 +117,7 @@ function smash (words) {
 // (45, 5, 15)   ->  true
 
 // (4, 1, 4)     ->  true
-(15, -5, 3)   ->  true
+(15, -5, 3) -> true
 
 function isDivideBy(number, a, b) {
   // good luck
@@ -116,8 +131,8 @@ function isDivideBy(number, a, b) {
 // area_or_perimeter(3, 3) --> 9
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
-const areaOrPerimeter = function(l , w) {
-  return (l===w) ? l * w : 2 * ( l + w) 
+const areaOrPerimeter = function (l, w) {
+  return (l === w) ? l * w : 2 * (l + w)
 };
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 53. Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
