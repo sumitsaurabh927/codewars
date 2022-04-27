@@ -104,7 +104,23 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 73. Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
+// Examples (Input -> Output):
+// * "String"      -> "SSttrriinngg"
+// * "Hello World" -> "HHeelllloo  WWoorrlldd"
+// * "1234!_ "     -> "11223344!!__  "
+// Good Luck!
+function doubleChar(str) {
+  // Your code here
+  let first = str.split('');
+  let output = [];
+  for(let i = 0; i<=first.length; i++){
+    output.push(first[i]);
+    output.push(first[i])
+  }
+  return output.join('');
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 72.
