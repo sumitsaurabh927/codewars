@@ -119,6 +119,12 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 68. Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+// Return your answer as a number.
+function sumMix(x) {
+  return x.reduce((a, b) => a + Number(b), 0)
+}
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
@@ -132,12 +138,12 @@
 
 
 function updateLight(current) {
-  
-  if(current === 'green'){
+
+  if (current === 'green') {
     return 'yellow'
-  }else if(current === 'yellow'){
+  } else if (current === 'yellow') {
     return 'red'
-  }else if(current === 'red'){
+  } else if (current === 'red') {
     return 'green'
   }
 
@@ -614,7 +620,7 @@ function sum(numbers) {
 
 // The function takes a name as its only argument, and returns one of the following strings:
 
-// name + " plays banjo" 
+// name + " plays banjo"
 // name + " does not play banjo"
 // Names given are always valid strings.
 
