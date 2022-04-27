@@ -117,7 +117,10 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
-
+// 69. Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 68. Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 
