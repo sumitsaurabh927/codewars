@@ -102,7 +102,24 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 74. Messi goals function
+//   Messi is a soccer player with goals in three leagues:
 
+//   LaLiga
+// Copa del Rey
+// Champions
+// Complete the function to return his total number of goals in all three leagues.
+
+//   Note: the input will always be valid.
+
+// For example:
+
+// 5, 10, 2  -- > 17
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 73. Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
@@ -115,7 +132,7 @@ function doubleChar(str) {
   // Your code here
   let first = str.split('');
   let output = [];
-  for(let i = 0; i<=first.length; i++){
+  for (let i = 0; i <= first.length; i++) {
     output.push(first[i]);
     output.push(first[i])
   }
@@ -149,7 +166,7 @@ let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 // Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
 function cockroachSpeed(s) {
   //Good Luck!
-  return Math.floor(s*100000/3600);
+  return Math.floor(s * 100000 / 3600);
 }
 
 
