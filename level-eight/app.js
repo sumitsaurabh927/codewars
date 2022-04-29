@@ -80,7 +80,9 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
-
+// 81.Now you have to write a function that takes an argument and returns the square of it.
+// Write the "square"-function here
+const square = num => num * num;
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 80. When provided with a number between 0-9, return it in words.
