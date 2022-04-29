@@ -92,8 +92,31 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 77. Your function takes two arguments:
+
+// current father's age (years)
+// current age of his son (years)
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
 
 
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+  let difference = dadYearsOld - sonYearsOld;
+  if (dadYearsOld === 2 * sonYearsOld) {
+    return 0;
+  }
+  for (let i = 0; i <= difference; i++) {
+    if ((dadYearsOld - i) === 2 * (sonYearsOld)) {
+      return i;
+    } else if (i === difference) {
+      for (let j = 0; j <= 100; j++) {
+        if ((dadYearsOld + j) === 2 * (sonYearsOld)) {
+          return j;
+        }
+      }
+    }
+  }
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 76. Grade book
 // Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
