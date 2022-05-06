@@ -50,8 +50,11 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
-
-
+// 91. Grasshopper - Function syntax debugging
+// A student was working on a function and made some syntax mistakes while coding. Help them find their mistakes and fix them.
+function main(verb, noun) {
+  return verb + noun
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 90. Fix the function
 // I created this function to add five to any number that was passed in to it and return the new value. It doesn't throw any errors but it returns the wrong number.
@@ -68,7 +71,7 @@ function addFive(num) {
 // All values will be positive integers or floats, or zero.
 function plural(n) {
   // ...
-  return (n===1) ? false : true;
+  return (n === 1) ? false : true;
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 88. Debugging sayHello function
@@ -92,7 +95,7 @@ function sayHello(name) {
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 function testEven(n) {
   //Your awesome code here!
-return (n%2===0) ? true : false;
+  return (n % 2 === 0) ? true : false;
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 86. The wide-mouth frog is particularly interested in the eating habits of other creatures.
@@ -106,7 +109,7 @@ return (n%2===0) ? true : false;
 
 function mouthSize(animal) {
   // code here
-  return (animal.toLowerCase()==='alligator') ? 'small' : 'wide';
+  return (animal.toLowerCase() === 'alligator') ? 'small' : 'wide';
 
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
@@ -130,13 +133,13 @@ function mouthSize(animal) {
 // 20 --> "drink beer"
 // 30 --> "drink whisky"
 function peopleWithAgeDrink(old) {
-  if(old>=21){
+  if (old >= 21) {
     return 'drink whisky';
-  }else if(old>=18 && old <21){
+  } else if (old >= 18 && old < 21) {
     return 'drink beer';
-  }else if(old>=14 && old< 18){
+  } else if (old >= 14 && old < 18) {
     return 'drink coke';
-  }else if(old<14){
+  } else if (old < 14) {
     return 'drink toddy';
   }
 };
