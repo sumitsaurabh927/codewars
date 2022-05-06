@@ -53,8 +53,13 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 90. Fix the function
+// I created this function to add five to any number that was passed in to it and return the new value. It doesn't throw any errors but it returns the wrong number.
 
-
+// Can you help me fix the function?
+function addFive(num) {
+  return Number(num) + 5
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 89. We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be used with that number or false if not. This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
 
