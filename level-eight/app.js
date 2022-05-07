@@ -41,8 +41,14 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 94. In this kata you will create a function that takes in a list and returns a list with the reverse order.
 
-
+// Examples (Input -> Output)
+// * [1, 2, 3, 4]  -> [4, 3, 2, 1]
+// * [9, 2, 0, 7]  -> [7, 0, 2, 9]
+function reverseList(list) {
+  return list.reverse();
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 93. Palindrome strings
 // A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. This includes capital letters, punctuation, and word dividers.
