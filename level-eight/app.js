@@ -44,8 +44,19 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 93. Palindrome strings
+// A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. This includes capital letters, punctuation, and word dividers.
 
+// Implement a function that checks if something is a palindrome. If the input is a number, convert it to string first.
 
+// Examples
+// isPalindrome("anna")   ==> true
+// isPalindrome("walter") ==> false
+// isPalindrome(12321)    ==> true
+// isPalindrome(123456)   ==> false
+function isPalindrome(line) {
+  return (line.split('').reverse().join('') === line) ? true : false;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 92. Christmas is coming and many people dreamed of having a ride with Santa's sleigh. But, of course, only Santa himself is allowed to use this wonderful transportation. And in order to make sure, that only he can board the sleigh, there's an authentication mechanism.
 
