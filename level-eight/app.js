@@ -35,7 +35,12 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 96. Fix the variables assigments so that this code stores the string 'devLab' in the variable name.
 
+let a = "dev"
+let b = "Lab"
+
+let name = `${a}${b}`
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 95. Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
