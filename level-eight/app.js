@@ -23,8 +23,13 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 101. Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
 
 
+function problem(x) {
+  //your code here
+  return (typeof (x) === 'string') ? "Error" : x * 50 + 6;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 100. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
 
