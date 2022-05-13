@@ -17,10 +17,15 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 102. Return the type of the sum of the two arguments
 
 
+function typeOfSum(a, b) {
+  // good luck
+  return typeof (a + b);
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
-// // Exclusive "or" (xor) Logical Operator
+// 101. Exclusive "or" (xor) Logical Operator
 // Overview
 // In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.) called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans. It then returns true if exactly one of the two expressions are true, false otherwise. For example:
 
@@ -37,7 +42,7 @@ function xor(a, b) {
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
-// 101. Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
+// 100. Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
 
 
 function problem(x) {
@@ -45,7 +50,7 @@ function problem(x) {
   return (typeof (x) === 'string') ? "Error" : x * 50 + 6;
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
-// 100. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
+// 99. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
 
 // Example:
 
@@ -59,7 +64,7 @@ function getChar(c) {
 }
 
 // -------------------------------------------------------------------------------------------------------------------------------------
-// 97. Inspired by the development team at Vooza, write the function that
+// 98. Inspired by the development team at Vooza, write the function that
 
 // accepts the name of a programmer, and
 // returns the number of lightsabers owned by that person.
@@ -75,7 +80,7 @@ function howManyLightsabersDoYouOwn(name) {
   return (name === 'Zach') ? 18 : 0;
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
-// 96. Your job is simple, if (x) squared is more than 1000, return 'It's hotter than the sun!!', else, return 'Help yourself to a honeycomb Yorkie for the glovebox.'.
+// 97. Your job is simple, if (x) squared is more than 1000, return 'It's hotter than the sun!!', else, return 'Help yourself to a honeycomb Yorkie for the glovebox.'.
 function apple(x) {
   return (x * x > 1000) ? `It's hotter than the sun!!` : `Help yourself to a honeycomb Yorkie for the glovebox.`;
 }
