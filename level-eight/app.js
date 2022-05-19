@@ -71,6 +71,7 @@ Example:
 // None of the arrays will be empty, so you don't have to worry about that!
 
 
+
 function removeEveryOther(arr) {
   //your code here
   let newArr = [];
@@ -81,6 +82,13 @@ function removeEveryOther(arr) {
   }
   return newArr;
 }
+// an optimised solution would be to use filter method -> filter(item, index) on the array
+
+// function removeEveryOther(arr){
+//   return arr.filter(function(elem, index) {
+//     return index % 2 === 0;
+//   });
+// }
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 108. Task
