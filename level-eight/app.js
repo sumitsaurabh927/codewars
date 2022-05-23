@@ -47,7 +47,7 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
-// 113. Finish the uefaEuro2016() function so it return string just like in the examples below:
+// 114. Finish the uefaEuro2016() function so it return string just like in the examples below:
 
 // uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germany won!"
 // uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
@@ -63,7 +63,19 @@ function uefaEuro2016(teams, scores) {
   }
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 114. To find the volume (centimeters cubed) of a cuboid you use the formula:
 
+// volume = Length * Width * Height
+
+// But someone forgot to use proper record keeping, so we only have the volume, and the length of a single side!
+
+// It's up to you to find out whether the cuboid has equal sides (= is a cube).
+
+// Return true if the cuboid could have equal sides, return false otherwise.
+
+// Return false for invalid numbers too (e.g volume or side is less than or equal to 0).
+
+// Note: the sides must be integers
 const cubeChecker = function (volume, side) {
   if (side > 0) {
     return (side * side * side === volume) ? true : false;
