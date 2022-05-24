@@ -54,14 +54,17 @@
 
 function findDifference(a, b) {
   //loading...
-    let volTwo = b.reduce((acc, x) =>
-      acc = acc * Number(x), 1)
-    let volOne = a.reduce((acc, x) =>
-      acc = acc * Number(x), 1)
+  //   let volTwo = b.reduce((acc, x) =>
+  //     acc = acc * Number(x), 1)
+  //   let volOne = a.reduce((acc, x) =>
+  //     acc = acc * Number(x), 1)
 
-    return Math.abs(volOne - volTwo);
+  //   return Math.abs(volOne - volTwo);
 
+  // one liner solution
 
+  return Math.abs(
+    (a.reduce((acc, x) => acc = acc * Number(x), 1)) - (b.reduce((acc, x) => acc = acc * Number(x), 1)));
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 114. Finish the uefaEuro2016() function so it return string just like in the examples below:
