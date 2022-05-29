@@ -26,8 +26,12 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 121. Write a script that will check to see if the player has achieved at least 100 points in his class. If so, he enters the qualifying stage.
 
 
+function playerRankUp(points) {
+  return points >= 100 ? "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up." : false;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 120. Template Strings
 // Template Strings, this kata is mainly aimed at the new JS ES6 Update introducing Template Strings
@@ -39,7 +43,7 @@
 // You must output a string containing the two strings with the word ```' are '```
 // Reference: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/template_strings
 
-let TempleStrings = function(obj, feature) {
+let TempleStrings = function (obj, feature) {
   return `${obj} are ${feature}`;
 }
 
