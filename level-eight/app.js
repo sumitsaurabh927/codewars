@@ -23,8 +23,36 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 122. Task
+// Given a number N, determine if the sum of N consecutive numbers is odd or even.
 
+// If the sum is definitely an odd number, return Odd.
+// If the sum is definitely an even number, return Even.
+// If the sum can be either odd or even ( depending on which first number you choose ), return Either.
+// Examples
+// Odd_or_Even(1) should return Either, because the sum can be odd or even.
+// Odd_or_Even(6) should return Odd, because 6 consecutive numbers contain 3 odd and 3 even numbers, so their sum is always odd.
+// Odd_or_Even(8) should return Even, because 8 consecutive numbers contain 4 odd and 4 even numbers, so their sum is always even.
+// Note
+// const ODD = "Odd";
+// const EVEN = "Even";
+// const EITHER = "Either";
+function oddOrEven(n) {
+  //   return ODD || EVEN || EITHER ;
 
+  if (n === 1) {
+    return 'Either'
+  }
+  if (n % 2 === 0) {
+    if ((n / 2) % 2 === 0) {
+      return 'Even'
+    } else return 'Odd'
+  } else if (n % 2 != 0) {
+
+    return 'Either'
+  }
+
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 121. Write a script that will check to see if the player has achieved at least 100 points in his class. If so, he enters the qualifying stage.
 
