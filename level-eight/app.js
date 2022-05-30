@@ -40,9 +40,7 @@
 function oddOrEven(n) {
   //   return ODD || EVEN || EITHER ;
 
-  if (n === 1) {
-    return 'Either'
-  }
+
   if (n % 2 === 0) {
     if ((n / 2) % 2 === 0) {
       return 'Even'
