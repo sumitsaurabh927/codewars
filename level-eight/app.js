@@ -46,6 +46,20 @@ function howMuchILoveYou(nbPetals) {
   }
 }
 
+// clever solution
+const phrases = [
+  'I love you',
+  'a little',
+  'a lot',
+  'passionately',
+  'madly',
+  'not at all',
+]
+
+function howMuchILoveYou(n) {
+   return phrases[(n - 1) % phrases.length]
+}
+
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 123. A western man is trying to find gold in a river. To do that, he passes a bucket through the river's soil and then checks if it contains any gold. However, he could be more productive if he wrote an algorithm to do the job for him.
 
