@@ -14,8 +14,45 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 125. Write a function that will check if two given characters are the same case.
 
+// If either of the characters is not a letter, return -1
+// If both characters are the same case, return 1
+// If both characters are letters, but not the same case, return 0
+// Examples
+// 'a' and 'g' returns 1
 
+// 'A' and 'C' returns 1
+
+// 'b' and 'G' returns 0
+
+// 'B' and 'g' returns 0
+
+// '0' and '?' returns -1
+
+function sameCase(a, b) {
+  let index = 0;
+  //   checking for small case a and both case b
+  if (a.charCodeAt(index) >= 97 && a.charCodeAt(index) <= 122) {
+    if (b.charCodeAt(index) >= 97 && b.charCodeAt(index) <= 122) {
+      return 1;
+    } else if (b.charCodeAt(index) >= 65 && b.charCodeAt(index) <= 90) {
+      return 0;
+    }
+  }
+  //   checking for large case a and both case b
+  if (a.charCodeAt(index) >= 65 && a.charCodeAt(index) <= 90) {
+    if (b.charCodeAt(index) >= 65 && b.charCodeAt(index) <= 90) {
+      return 1;
+    } else if (b.charCodeAt(index) >= 97 && b.charCodeAt(index) <= 122) {
+      return 0;
+    }
+  }
+  //   if either of the two are not a letter return -1
+  if ((a.charCodeAt(index) < 65 || (a.charCodeAt(index) > 90 && a.charCodeAt(index) < 97) || a.charCodeAt(index) > 122) || ((b.charCodeAt(index) < 65 || (b.charCodeAt(index) > 90 && b.charCodeAt(index) < 97) || b.charCodeAt(index) > 122))) {
+    return -1;
+  }
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 124. Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
 
@@ -57,7 +94,7 @@ const phrases = [
 ]
 
 function howMuchILoveYou(n) {
-   return phrases[(n - 1) % phrases.length]
+  return phrases[(n - 1) % phrases.length]
 }
 
 // -------------------------------------------------------------------------------------------------------------------------------------
