@@ -5,6 +5,17 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 128. Write a function that returns the total surface area and volume of a box as an array: [area, volume]
+
+
+function getSize(width, height, depth) {
+  let surArea = 2 * ((width * height) + (width * depth) + (height * depth));
+  let vol = (width * height * depth);
+  let arr = [];
+  arr.push(surArea);
+  arr.push(vol);
+  return arr;
+}
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
