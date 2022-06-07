@@ -1,6 +1,10 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
-
+function bonusTime(salary, bonus) {
+  // your code here
+  bonus ? salary *= 10 : salary;
+  return `£${salary}`;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 129. Arrow style Functions
 // Come here to practice the Arrow style functions Not much else to say good luck!
