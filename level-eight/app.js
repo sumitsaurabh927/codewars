@@ -170,8 +170,12 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 134. Create a method that accepts a list and an item, and returns true if the item belongs to the list, otherwise false.
 
-
+function include(arr, item) {
+  // ...
+  return arr.includes(item);
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 133. Americans are odd people: in their buildings, the first floor is actually the ground floor and there is no 13th floor (due to superstition).
 
