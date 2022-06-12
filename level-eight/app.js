@@ -167,8 +167,24 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 135. Description:
+// Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
 
-
+// Examples
+// replace("Hi!") === "H!!"
+// replace("!Hi! Hi!") === "!H!! H!!"
+// replace("aeiou") === "!!!!!"
+// replace("ABCDE") === "!BCD!"
+function replace(s) {
+  //coding and coding....
+  return s.split('').map(x => {
+    if (x === 'a' || x === 'A' || x === 'e' || x === 'E' || x === 'i' || x === 'I' || x === 'o' || x === 'O' || x === 'u' || x === 'U') {
+      return x = '!';
+    } else {
+      return x;
+    }
+  }).join('');
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 134. Create a method that accepts a list and an item, and returns true if the item belongs to the list, otherwise false.
 
