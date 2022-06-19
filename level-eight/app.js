@@ -146,8 +146,21 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 142. You get any card as an argument. Your task is to return the suit of this card (in lowercase).
 
+// Our deck (is preloaded):
 
+// ('3♣') -> return 'clubs'
+// ('3♦') -> return 'diamonds'
+// ('3♥') -> return 'hearts'
+// ('3♠') -> return 'spades'
+function defineSuit(card) {
+  // good luck
+  if (card.split('').includes('♣')) return 'clubs';
+  else if (card.split('').includes('♦')) return 'diamonds';
+  else if (card.split('').includes('♥')) return 'hearts';
+  else return 'spades';
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 141. The male gametes or sperm cells in humans and other mammals are heterogametic and contain one of two types of sex chromosomes. They are either X or Y. The female gametes or eggs however, contain only the X sex chromosome and are homogametic.
