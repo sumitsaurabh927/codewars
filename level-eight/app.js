@@ -140,8 +140,25 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 144. Create a function that takes a string and an integer (n).
 
+// The function should return a string that repeats the input string n number of times.
 
+// If anything other than a string is passed in you should return "Not a string"
+
+// Example
+// "Hi", 2 --> "HiHi"
+// 1234, 5 --> "Not a string"
+var repeatIt = function (str, n) {
+  //   checking if input is string
+  let out = '';
+  if (typeof (str) === 'string') {
+    for (let i = 0; i < n; i++) {
+      out = out.concat(str)
+    }
+    return out;
+  } return 'Not a string'
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 143. You need to write a function that reverses the words in a given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
 
