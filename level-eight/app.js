@@ -134,8 +134,18 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 146. Combine strings function
+// Create a function named combineNames that accepts two parameters (first and last name). The function should return the full name.
 
+// Example:
 
+// combineNames('James', 'Stevens')
+// returns:
+
+// 'James Stevens'
+
+// Create the combineNames function here
+const combineNames = (firstName, lastName) => `${firstName} ${lastName}`
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 145. Make multiple functions that will return the sum, difference, modulus, product, quotient, and the exponent respectively.
