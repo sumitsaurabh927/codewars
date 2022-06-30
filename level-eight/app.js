@@ -113,8 +113,16 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 153. When provided with a letter, return its position in the alphabet.
 
+// Input :: "a"
 
+// Ouput :: "Position of alphabet: 1"
+function position(letter) {
+  //Write your own Code!
+  let alpha = 'abcdefghijklmnopqrstuvwxyz';
+  return `Position of alphabet: ${alpha.indexOf(letter) + 1}`;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 152. Time to test your basic knowledge in functions! Return the odds from a list:
 
