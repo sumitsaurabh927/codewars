@@ -107,8 +107,22 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 155. There are pillars near the road. The distance between the pillars is the same and the width of the pillars is the same. Your function accepts three arguments:
+
+// number of pillars (≥ 1);
+// distance between pillars (10 - 30 meters);
+// width of the pillar (10 - 50 centimeters).
+// Calculate the distance between the first and the last pillar in centimeters (without the width of the first and last pillar).
 
 
+function pillars(numPill, dist, width) {
+  // your code here
+  if (numPill === 2) {
+    return dist * 100;
+  } else if (numPill > 2) {
+    return ((numPill - 1) * dist * 100) + ((numPill - 2) * width);
+  } else return 0;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 154. Create a method sayHello/say_hello/SayHello that takes as input a name, city, and state to welcome a person. Note that name will be an array consisting of one or more values that should be joined together with one space between each, and the length of the name array in test cases will vary.
 
