@@ -101,8 +101,16 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 157. Write a function that always returns 5
+
+// Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+
+// Good luck :)
 
 
+function unusualFive() {
+  return 'fever'.length;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 156. Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer.
 
