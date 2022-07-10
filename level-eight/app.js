@@ -83,8 +83,19 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 161. You can print your name on a billboard ad. Find out how much it will cost you. Each letter has a default price of £30, but that can be different if you are given 2 parameters instead of 1.
 
+//You can not use multiplier "*" operator.
 
+//If your name would be Jeong-Ho Aristotelis, ad would cost £600. 20 leters * 30 = 600 (Space counts as a letter).
+function billboard(name, price = 30) {
+  let num = name.length;
+  let cost = 0;
+  for (let i = 0; i < name.length; i++) {
+    cost += price;
+  }
+  return cost;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 160. Coding in function pickIt, function accept 1 parameter:arr, it's a number array, we need traverse arr by using for loop, if element is odd number, push it to array odd, if it's a even number, push it to array even.
 //I've defined two array odd and even in the function, and also wrote the return statement. your work is write a for loop.
