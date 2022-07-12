@@ -77,7 +77,17 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 163. Nodejs package.json
+// Node applications require a file named package.json on the root of the project.
 
+// You can create this file manually or have the command npm init to assist you in this process.
+
+// The fields name and version are mandatory.
+const configuration = {
+  "name": "codewars",
+  "description": "this package imports top 10 questions from codewars",
+  "version": "1.0.0"
+};
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 162. Create a function that takes a number as an argument and returns a grade based on that number.
