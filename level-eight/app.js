@@ -65,7 +65,51 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 167. I have a cat and a dog.
 
+// I got them at the same time as kitten/puppy. That was humanYears years ago.
+
+// Return their respective ages now as [humanYears,catYears,dogYears]
+
+// NOTES:
+
+// humanYears >= 1
+// humanYears are whole numbers only
+// Cat Years
+// 15 cat years for first year
+// +9 cat years for second year
+// +4 cat years for each year after that
+// Dog Years
+// 15 dog years for first year
+// +9 dog years for second year
+// +5 dog years for each year after that
+let humanYearsCatYearsDogYears = function (humanYears) {
+  // Your code here!
+  let arr = [];
+  let catYrs = 0;
+  let dogYrs = 0;
+  let originalHumanYrs = humanYears;
+  if (humanYears > 0) {
+    catYrs += 15;
+    dogYrs += 15;
+    humanYears -= 1;
+    if (humanYears > 0) {
+      catYrs += 9;
+      dogYrs += 9;
+      humanYears -= 1;
+      if (humanYears > 0) {
+        for (; humanYears > 0; humanYears--) {
+          catYrs += 4;
+          dogYrs += 5;
+        }
+      }
+    }
+  }
+  arr.push(originalHumanYrs);
+  arr.push(catYrs);
+  arr.push(dogYrs);
+  return arr;
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 166. Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
