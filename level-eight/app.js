@@ -59,8 +59,15 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 169. Write a function that returns a string in which firstname is swapped with last name.
 
+// Example(Input --> Output)
 
+// "john McClane" --> "McClane john"
+function nameShuffler(str) {
+  //Shuffle It
+  return str.split(' ').reverse().join(' ');
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 168. Write a function that checks if a given string (case insensitive) is a palindrome.
 
