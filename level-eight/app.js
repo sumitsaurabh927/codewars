@@ -60,7 +60,7 @@
 
 // Output: String with comma delimited elements of the array in th same order.
 
-"h,o,l,a"
+// "h,o,l,a"
 function printArray(array) {
   //show me the code!
   return array.join(',');
