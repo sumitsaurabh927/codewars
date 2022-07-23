@@ -26,9 +26,37 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 6. String will never be empty and you do not need to account for different data types.
 
-
+function findShort(s) {
+        let arr = s.split(' ');
+        let shortest = 9999;
+        arr.forEach(x => {
+                if (x.length < shortest) {
+                        shortest = x.length;
+                }
+        })
+        return shortest;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 5. You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+// #Examples:
+
+// Kata.getMiddle("test") should return "es"
+
+// Kata.getMiddle("testing") should return "t"
+
+// Kata.getMiddle("middle") should return "dd"
+
+// Kata.getMiddle("A") should return "A"
+// #Input
+
+// A word (string) of length 0 < str < 1000 (In javascript you may get slightly more than 1000 in some test cases due to an error in the test cases). You do not need to test for this. This is only here to tell you that you do not need to worry about your solution timing out.
+
+// #Output
+
+// The middle character(s) of the word represented as a string.
 
 function getMiddle(s) {
         if (s.length % 2 === 0) {
@@ -41,10 +69,9 @@ function getMiddle(s) {
 // Examples
 // highAndLow("1 2 3 4 5");  // return "5 1"
 // highAndLow("1 2 -3 4 5"); // return "5 -3"function getMiddle(s) {
-        if (s.length % 2 === 0) {
-                return `${s[s.length / 2 - 1]}${s[s.length / 2]}`;
-        } else return `${s[Math.floor(s.length / 2)]}`;
-}
+if (s.length % 2 === 0) {
+        return `${s[s.length / 2 - 1]}${s[s.length / 2]}`;
+} else return `${s[Math.floor(s.length / 2)]}`;
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
 // Notes
 // All numbers are valid Int32, no need to validate them.
