@@ -20,8 +20,15 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 8. Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
+//(In this case, all triangles must have surface greater than 0 to be accepted).
+function isTriangle(a, b, c) {
+        if (a > 0 && b > 0 && c > 0) {
+                return ((a + b + c - Math.max(a, b, c)) > Math.max(a, b, c)) ? true : false;
 
+        } else return false;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 7. Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
 
