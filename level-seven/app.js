@@ -17,7 +17,21 @@
 
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
-
+function sumTwoSmallestNumbers(numbers) {
+        //Code here
+        let lowest = numbers[0];
+        let secondLowest = numbers[1];
+        for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] < lowest) {
+                        secondLowest = lowest;
+                        lowest = numbers[i];
+                }
+                if (numbers[i] > lowest && numbers[i] < secondLowest) {
+                        secondLowest = numbers[i];
+                }
+        }
+        return lowest + secondLowest;
+}
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
