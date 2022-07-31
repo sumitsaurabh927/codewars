@@ -8,7 +8,15 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+function oddOrEven(array) {
+        //enter code here
+        if (array.length > 0) {
+                let sum = array.reduce((acc, x) => acc + x, 0);
+                return sum % 2 === 0 ? 'even' : 'odd';
+        }
+        return 'even'
 
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 11. Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
