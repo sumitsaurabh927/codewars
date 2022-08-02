@@ -44,21 +44,44 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 174. This Kata is intended as a small challenge for my students
 
+// All Star Code Challenge #18
 
+// Create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one.
+
+// If no occurrences can be found, a count of 0 should be returned.
+
+// ("Hello", "o")  ==>  1
+// ("Hello", "l")  ==>  2
+// ("", "z")       ==>  0
+// Notes:
+
+// The first argument can be an empty string
+// The second string argument will always be of length 1
+function strCount(str, letter) {
+  //code here
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letter) {
+      count += 1;
+    }
+  }
+  return count;
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 //  173. DESCRIPTION:
-The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+// The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 
-For example:
+// For example:
 
-1.08 --> 30
-Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+// 1.08 --> 30
+// Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
 function cockroachSpeed(s) {
 
   //Good Luck
 
-  return Math.floor( (s*(100000/3600)) );
+  return Math.floor((s * (100000 / 3600)));
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 172. Given an integral number, determine if it's a square number:
