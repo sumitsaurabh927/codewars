@@ -8,6 +8,7 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 12. Write a function to test if the sum of all elements of an array is even or odd
 function oddOrEven(array) {
         //enter code here
         if (array.length > 0) {
