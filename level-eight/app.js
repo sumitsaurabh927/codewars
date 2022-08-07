@@ -29,7 +29,29 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 179. The goal is to create a function 'numberToPower(number, power)' that "raises" the number up to power (ie multiplies number by itself power times).
 
+// Examples
+// numberToPower(3,2)  // -> 9 ( = 3 * 3 )
+// numberToPower(2,3)  // -> 8 ( = 2 * 2 * 2 )
+// numberToPower(10,6) // -> 1000000
+// Note: Math.pow and some other Math functions like eval() and ** are disabled.
+
+
+function numberToPower(number, power) {
+  // Code here
+  let result = number;
+
+  if (power === 0) {
+    return 1;
+  } else {
+    for (let i = 1; i < power; i++) {
+      result *= number;
+    }
+
+    return result;
+  }
+}
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 178. Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers, so, for example:
