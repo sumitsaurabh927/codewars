@@ -23,8 +23,26 @@
 
 
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 181. Teach snoopy and scooby doo how to bark using object methods. Currently only snoopy can bark and not scooby doo.
 
+// snoopy.bark(); // return "Woof"
+// scoobydoo.bark(); // undefined
+// Use method prototypes to enable all Dogs to bark.
 
+function Dog(breed) {
+  this.breed = breed;
+}
+
+let snoopy = new Dog("Beagle");
+
+snoopy.bark = function () {
+  return "Woof";
+};
+
+let scoobydoo = new Dog("Great Dane");
+scoobydoo.bark = function () {
+  return 'Woof';
+};
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // 180. Philip's just turned four and he wants to know how old he will be in various years in the future such as 2090 or 3044. His parents can't keep up calculating this so they've begged you to help them out by writing a programme that can answer Philip's endless questions.
