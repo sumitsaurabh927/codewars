@@ -1,6 +1,18 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
+// 189. Create a function that accepts a list/array and a number n, and returns a list/array of the first n elements from the list/array.
 
-
+function take(arr, n) {
+  // Your code here
+  if (n <= arr.length) {
+    return arr.slice(0, n);
+  } else {
+    if (arr.length === 0) {
+      return [];
+    } if (n > arr.length) {
+      return arr;
+    }
+  }
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 188. misson 1: I've create three function, and defined some global variables, please select some variables that can make up the name of the function, and return them(Please note the uppercase and lowercase letters are different).
 
