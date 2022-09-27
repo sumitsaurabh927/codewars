@@ -1,7 +1,16 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 194. Given a string of arbitrary length with any ascii characters. Write a function to determine whether the string contains the whole word "English".
 
+// The order of characters is important -- a string "abcEnglishdef" is correct but "abcnEglishsef" is not correct.
 
+// Upper or lower case letter does not matter -- "eNglisH" is also correct.
+
+// Return value as boolean values, true for the string to contains "English", false for it does not.
+function spEng(sentence) {
+  //write your code here
+  return sentence.toUpperCase().includes('ENGLISH')
+}
 // -------------------------------------------------------------------------------------------------------------------------------------
 // 193. You have an award-winning garden and every day the plants need exactly 40mm of water. You created a great piece of JavaScript to calculate the amount of water your plants will need when you have taken into consideration the amount of rain water that is forecast for the day. Your jealous neighbour hacked your computer and filled your code with bugs.
 
